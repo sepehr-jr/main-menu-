@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <a href="#" class="loginbtn">
+      <i class="fa fa-user"></i>Log In
+    </a>
+   
+    <a href="#" class=Sign></a>
+    <div class="nav-bar">
+      <section>
+        <div class="nav-left">Home</div>
+        <div class="nav-left">Aboutus</div>
+        <div class="nav-left">Contact us</div>
+        <div class="nav-left" onclick="openMoreNav()">
+          Products<i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+      <section style="justify-self: center; text-align: center">
+        <div class="nav-center">NIKE</div>
+      </section>
+      <div class="box">
+            <input type="checkbox" id="check" />
+            <div class="search-box">
+              <input type="text" placeholder="Type here..." />
+              <label for="check" class="icon">
+                <i class="fas fa-search"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="up-arrow"></div>
+    </div>
+    <!-- Nav Bar End -->
+    <div class="more-nav" id="moreNav">
+      <section id="first-more-nav">
+        <p
+          style="margin-top: 20px"
+          class="selectedFirstColumn"
+          id="first-col-1"
+          onClick="changeFirstCol(this)"
+        >
+          Mens
+        </p>
+        <p id="first-col-2" onClick="changeFirstCol(this)">Women</p>
+      </section>
+
+      <section id="second-more-nav">
+        <p
+          style="margin-top: 20px"
+          class="selectedSecondColumn"
+          id="second-col-1"
+          onClick="changeSecondCol(this)"
+        >
+          Featured
+        </p>
+        <p id="second-col-2" onClick="changeSecondCol(this)">Shoes</p>
+        <p id="second-col-3" onClick="changeSecondCol(this)">Clothing</p>
+        <p id="second-col-4" onClick="changeSecondCol(this)">Shop By Sport</p>
+        <p id="second-col-5" onClick="changeSecondCol(this)">Best Sellers</p>
+      </section>
+      <section id="third-more-nav">
+        <div class="third-nav-col">
+          <div class="third-nav-header">New Releases</div>
+          <p>Shoes</p>
+          <p>Clothes</p>
+          <p>Caps</p>
+          <p>Trousers</p>
+          <div class="third-nav-header">Summer Trends</div>
+          <p>Shoes</p>
+          <p>Clothes</p>
+          <p>Caps</p>
+          <p>Trousers</p>
+        </div>
+        <div class="third-nav-col" style="margin: top 40px">
+          <div class="third-nav-header">National Team Collection</div>
+          <p>Shoes</p>
+          <p>Clothes</p>
+          <p>Caps</p>
+          <p>Trousers</p>
+          <div class="third-nav-header">Nike Essential</div>
+          <p>Shoes</p>
+          <p>Clothes</p>
+          <p>Caps</p>
+          <p>Trousers</p>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
